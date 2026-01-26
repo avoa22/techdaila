@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | daila Name</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #2563eb;
+        }
+
+        /* PAGE HEADER */
+        .page-header {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 90px 20px;
+        }
+
+        .page-header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            max-width: 760px;
+            opacity: 0.9;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* CONTACT GRID */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-box {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .contact-box p {
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        .contact-info strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #0f172a;
+        }
+
+        /* FORM */
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #cbd5f5;
+            font-size: 14px;
+        }
+
+        form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        form button {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            padding: 30px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+            Reach out to discuss your requirements, pricing, or long-term
+            digital growth strategy.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- CONTACT DETAILS -->
+            <div class="contact-box">
+                <h2>Get in Touch</h2>
+                <p>
+                    We’d be happy to understand your business needs and
+                    recommend the right digital solution.
+                </p>
+
+                <div class="contact-info">
+                    <strong>Send us Email</strong>
+                    <p>daila01012026@gmail.com</p>
+					
+					<strong>Call us</strong>
+                    <p>+91 9789 001 401</p>
+
+                    <strong>Address</strong>
+                    <p>
+                        No. 1/235A, Veeranam Road,<br>
+                        Sivan Koil Street, OMR Padur,<br>
+                        Chennai – 603 103
+                    </p>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="contact-box">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <span>© 2026 daila. All rights reserved.</span>
+        <span>Web • E-Commerce • Digital Marketing</span>
+    </div>
+</footer>
+
+</body>
+</html>

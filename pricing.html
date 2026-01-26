@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Your Company Name</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #2563eb;
+        }
+
+        /* PRICING HERO (FIXED LOCATION) */
+        .pricing-hero {
+            background:
+                linear-gradient(
+                    rgba(15, 23, 42, 0.85),
+                    rgba(15, 23, 42, 0.85)
+                ),
+                url("images/pricing-bg.png") center / cover no-repeat;
+            color: #ffffff;
+            padding: 110px 20px;
+        }
+
+        .pricing-hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .pricing-hero p {
+            max-width: 760px;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .subtext {
+            color: #475569;
+            margin-bottom: 40px;
+            max-width: 760px;
+        }
+
+        /* PRICING CARDS */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            background: #ffffff;
+            padding: 36px;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .pricing-card h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2563eb;
+            margin: 14px 0;
+        }
+
+        .support {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            padding: 30px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PRICING HERO -->
+<section class="pricing-hero">
+    <div class="container">
+        <h1>Pricing & Packages</h1>
+        <p>
+            Transparent pricing for digital infrastructure, marketing campaigns,
+            and long-term business growth.
+        </p>
+    </div>
+</section>
+
+<!-- SHOPIFY -->
+<section class="section">
+    <div class="container">
+        <h2>Shopify Website & Mobile App</h2>
+        <p class="subtext">
+            Enterprise-grade e-commerce solutions with continuous support and optimization.
+        </p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Shopify Starter</h3>
+                <div class="price">₹55,000</div>
+                <div class="support">Monthly Support: ₹7,000</div>
+                <ul>
+                    <li>Shopify website (10 products)</li>
+                    <li>Professional theme customization</li>
+                    <li>Payment & shipping configuration</li>
+                    <li>Android mobile app</li>
+                    <li>Basic SEO structure</li>
+                    <li>Testing & go-live support</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Shopify Growth ⭐</h3>
+                <div class="price">₹95,000</div>
+                <div class="support">Monthly Support: ₹12,000</div>
+                <ul>
+                    <li>Shopify website (50 products)</li>
+                    <li>Premium theme customization</li>
+                    <li>Android & iOS mobile apps</li>
+                    <li>On-page SEO setup</li>
+                    <li>Analytics & tracking</li>
+                    <li>Conversion-ready checkout</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Shopify Advanced</h3>
+                <div class="price">₹1,65,000</div>
+                <div class="support">Monthly Support: ₹22,000</div>
+                <ul>
+                    <li>Fully custom Shopify UI/UX</li>
+                    <li>Advanced collections & filters</li>
+                    <li>Automation & workflow setup</li>
+                    <li>Android & iOS mobile apps</li>
+                    <li>Speed & performance optimization</li>
+                    <li>Monthly performance review</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WEBSITES -->
+<section class="section">
+    <div class="container">
+        <h2>Business Website Development</h2>
+        <p class="subtext">
+            Corporate websites designed for credibility, speed, and scalability.
+        </p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>HTML Business Website</h3>
+                <div class="price">₹25,000</div>
+                <div class="support">Monthly Support: ₹2,500</div>
+                <ul>
+                    <li>Up to 5 pages</li>
+                    <li>Responsive corporate layout</li>
+                    <li>Contact & enquiry forms</li>
+                    <li>Basic SEO readiness</li>
+                    <li>Security best practices</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Professional Website</h3>
+                <div class="price">₹45,000</div>
+                <div class="support">Monthly Support: ₹5,000</div>
+                <ul>
+                    <li>Up to 10 pages</li>
+                    <li>Enhanced UI/UX</li>
+                    <li>Performance optimization</li>
+                    <li>Advanced form integrations</li>
+                    <li>Analytics integration</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>React Business Website</h3>
+                <div class="price">₹95,000</div>
+                <div class="support">Monthly Support: ₹10,000</div>
+                <ul>
+                    <li>Custom React frontend</li>
+                    <li>API & backend integration</li>
+                    <li>SEO-friendly architecture</li>
+                    <li>High performance build</li>
+                    <li>Scalable component structure</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DIGITAL MARKETING -->
+<section class="section">
+    <div class="container">
+        <h2>Digital Marketing & Campaign Management</h2>
+        <p class="subtext">
+            ROI-focused digital marketing strategies designed for sustained growth.
+        </p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Starter Digital Presence</h3>
+                <div class="price">₹18,000 / month</div>
+                <ul>
+                    <li>SEO for 10 keywords</li>
+                    <li>Google My Business optimization</li>
+                    <li>8 social media posts</li>
+                    <li>Monthly performance report</li>
+                    <li>Basic competitor analysis</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Growth Booster ⭐</h3>
+                <div class="price">₹35,000 / month</div>
+                <ul>
+                    <li>SEO for 25 keywords</li>
+                    <li>Google & Meta Ads management</li>
+                    <li>16 social media posts</li>
+                    <li>Conversion tracking</li>
+                    <li>Campaign optimization</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Brand Builder</h3>
+                <div class="price">₹65,000 / month</div>
+                <ul>
+                    <li>SEO for 40 keywords</li>
+                    <li>Content marketing (2 blogs)</li>
+                    <li>24 social media posts</li>
+                    <li>Advanced analytics</li>
+                    <li>Brand positioning strategy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <span>© 2026 Your Company. All rights reserved.</span>
+        <span>Web • E-Commerce • Digital Marketing</span>
+    </div>
+</footer>
+
+</body>
+</html>
