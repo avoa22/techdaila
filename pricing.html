@@ -1,348 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | daila.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | daila.</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
-        body {
-            background: #f8fafc;
-            color: #1f2937;
-            line-height: 1.6;
-        }
+body {
+    background: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+}
 
-        /* HEADER */
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
+/* HEADER */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
 
-        .nav-container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .logo img {
-            height: 40px;
-        }
+.logo img {
+    height: 40px;
+}
 
-        nav a {
-            margin-left: 30px;
-            text-decoration: none;
-            color: #334155;
-            font-weight: 500;
-        }
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+}
 
-        nav a:hover,
-        nav a.active {
-            color: #2563eb;
-        }
+nav a:hover,
+nav a.active {
+    color: #2563eb;
+}
 
-        /* PRICING HERO (FIXED LOCATION) */
-        .pricing-hero {
-            background:
-                linear-gradient(
-                    rgba(15, 23, 42, 0.85),
-                    rgba(15, 23, 42, 0.85)
-                ),
+/* HERO */
+.pricing-hero {
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
                 url("images/pricing-bg.png") center / cover no-repeat;
-            color: #ffffff;
-            padding: 110px 20px;
-        }
+    color: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+}
 
-        .pricing-hero h1 {
-            font-size: 42px;
-            margin-bottom: 12px;
-        }
+.pricing-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 
-        .pricing-hero p {
-            max-width: 760px;
-            opacity: 0.9;
-        }
+.pricing-hero p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
 
-        /* SECTIONS */
-        .section {
-            padding: 90px 20px;
-        }
+/* SECTION */
+.section {
+    padding: 70px 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-        h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #0f172a;
-        }
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
-        .subtext {
-            color: #475569;
-            margin-bottom: 40px;
-            max-width: 760px;
-        }
+.subtext {
+    color: #475569;
+    margin-bottom: 30px;
+    max-width: 750px;
+}
 
-        /* PRICING CARDS */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+/* ENGAGEMENT NOTICE */
+.notice-box {
+    background: #eef2ff;
+    padding: 20px;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
 
-        .pricing-card {
-            background: #ffffff;
-            padding: 36px;
-            border-radius: 14px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-        }
+/* PRICING GRID */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-        .pricing-card h3 {
-            font-size: 22px;
-            margin-bottom: 8px;
-        }
+.pricing-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-        .price {
-            font-size: 28px;
-            font-weight: 700;
-            color: #2563eb;
-            margin: 14px 0;
-        }
+.pricing-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-        .support {
-            font-size: 14px;
-            color: #64748b;
-            margin-bottom: 20px;
-        }
+.price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
 
-        ul {
-            list-style: none;
-        }
+.duration {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
 
-        ul li {
-            margin-bottom: 10px;
-            color: #475569;
-        }
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
 
-        /* FOOTER */
-        footer {
-            background: #020617;
-            color: #94a3b8;
-            padding: 30px 20px;
-        }
+ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #475569;
+}
 
-        .footer-container {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-    </style>
+.addon-section {
+    margin-top: 50px;
+}
+
+footer {
+    background: #020617;
+    color: #94a3b8;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 10px 15px 0 0;
+        display: inline-block;
+    }
+
+    .pricing-hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="nav-container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Company Logo">
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pricing.html" class="active">Pricing</a>
-            <a href="benefits.html">Benefits</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
+<div class="nav-container">
+<div class="logo">
+<img src="images/logo.png" alt="Company Logo">
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="pricing.html" class="active">Pricing</a>
+<a href="benefits.html">Benefits</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
 
-<!-- PRICING HERO -->
 <section class="pricing-hero">
-    <div class="container">
-        <h1>Pricing & Packages</h1>
-        <p>
-            Transparent pricing for digital infrastructure, marketing campaigns,
-            and long-term business growth.
-        </p>
-    </div>
+<h1>Shopify Commerce Plans</h1>
+<p>
+Integrated Shopify website management with built-in mobile web app (PWA) and growth optimization.
+</p>
 </section>
 
-<!-- SHOPIFY -->
 <section class="section">
-    <div class="container">
-        <h2>Shopify Website & Mobile App</h2>
-        <p class="subtext">
-            Enterprise-grade e-commerce solutions with continuous support and optimization.
-        </p>
+<div class="container">
 
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Shopify Starter</h3>
-                <div class="price">₹55,000</div>
-                <div class="support">Monthly Support: ₹7,000</div>
-                <ul>
-                    <li>Shopify website (10 products)</li>
-                    <li>Professional theme customization</li>
-                    <li>Payment & shipping configuration</li>
-                    <li>Android mobile app</li>
-                    <li>Basic SEO structure</li>
-                    <li>Testing & go-live support</li>
-                </ul>
-            </div>
+<h2>TechDaila Commerce Suite™</h2>
+<p class="subtext">
+Professional Shopify growth plans with integrated Progressive Web App (PWA).
+</p>
 
-            <div class="pricing-card">
-                <h3>Shopify Growth ⭐</h3>
-                <div class="price">₹95,000</div>
-                <div class="support">Monthly Support: ₹12,000</div>
-                <ul>
-                    <li>Shopify website (50 products)</li>
-                    <li>Premium theme customization</li>
-                    <li>Android & iOS mobile apps</li>
-                    <li>On-page SEO setup</li>
-                    <li>Analytics & tracking</li>
-                    <li>Conversion-ready checkout</li>
-                </ul>
-            </div>
+<div class="notice-box">
+<strong>Engagement Requirement:</strong><br>
+All plans require either a one-time onboarding investment of ₹25,000 (non-refundable) 
+or 6 months advance commitment. This ensures proper technical implementation and measurable growth execution.
+</div>
 
-            <div class="pricing-card">
-                <h3>Shopify Advanced</h3>
-                <div class="price">₹1,65,000</div>
-                <div class="support">Monthly Support: ₹22,000</div>
-                <ul>
-                    <li>Fully custom Shopify UI/UX</li>
-                    <li>Advanced collections & filters</li>
-                    <li>Automation & workflow setup</li>
-                    <li>Android & iOS mobile apps</li>
-                    <li>Speed & performance optimization</li>
-                    <li>Monthly performance review</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<div class="pricing-grid">
+
+<div class="pricing-card">
+<h3>Launch</h3>
+<div class="price">₹7,999</div>
+<div class="duration">per month</div>
+<ul>
+<li>Shopify store management</li>
+<li>10 product uploads/month</li>
+<li>Theme updates & bug fixes</li>
+<li>Basic SEO setup</li>
+<li>WhatsApp integration</li>
+<li><strong>Integrated PWA Mobile Web App</strong></li>
+<li>Push notifications (Android)</li>
+<li>Email support (48 hrs)</li>
+</ul>
+</div>
+
+<div class="pricing-card">
+<h3>Elevate ⭐</h3>
+<div class="price">₹16,999</div>
+<div class="duration">per month</div>
+<ul>
+<li>Everything in Launch</li>
+<li>25 product uploads</li>
+<li>2 CRO improvements/month</li>
+<li>1 landing page/month</li>
+<li>Advanced speed optimization</li>
+<li>Email automation setup</li>
+<li>Abandoned cart push workflow</li>
+<li>Priority support (24 hrs)</li>
+</ul>
+</div>
+
+<div class="pricing-card">
+<h3>Empire</h3>
+<div class="price">₹29,999</div>
+<div class="duration">per month</div>
+<ul>
+<li>Everything in Elevate</li>
+<li>Unlimited product uploads</li>
+<li>Advanced CRO & funnel optimization</li>
+<li>A/B testing support</li>
+<li>Dedicated account manager</li>
+<li>Advanced push automation</li>
+<li>Monthly strategy call</li>
+<li>12-hour priority response</li>
+</ul>
+</div>
+
+</div>
+
+<div class="addon-section">
+<h2>Premium Add-Ons</h2>
+<div class="pricing-grid">
+
+<div class="pricing-card">
+<h3>Native Mobile App (Android + iOS)</h3>
+<div class="price">₹1.5L – ₹3L</div>
+<div class="duration">one-time + ₹12,000/month maintenance</div>
+<ul>
+<li>Play Store & App Store deployment</li>
+<li>Push notifications</li>
+<li>Payment integration</li>
+<li>3-month warranty support</li>
+</ul>
+</div>
+
+<div class="pricing-card">
+<h3>Paid Ads Management</h3>
+<div class="price">₹15,000 – ₹35,000</div>
+<div class="duration">per month</div>
+<ul>
+<li>Google & Meta Ads</li>
+<li>Conversion tracking</li>
+<li>Campaign optimization</li>
+<li>Monthly ROI reporting</li>
+</ul>
+</div>
+
+<div class="pricing-card">
+<h3>Advanced Email Automation</h3>
+<div class="price">₹8,000</div>
+<div class="duration">per month</div>
+<ul>
+<li>Abandoned cart flows</li>
+<li>Promotional sequences</li>
+<li>Segmentation setup</li>
+<li>Performance tracking</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</div>
 </section>
 
-<!-- WEBSITES -->
-<section class="section">
-    <div class="container">
-        <h2>Business Website Development</h2>
-        <p class="subtext">
-            Corporate websites designed for credibility, speed, and scalability.
-        </p>
-
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>HTML Business Website</h3>
-                <div class="price">₹25,000</div>
-                <div class="support">Monthly Support: ₹2,500</div>
-                <ul>
-                    <li>Up to 5 pages</li>
-                    <li>Responsive corporate layout</li>
-                    <li>Contact & enquiry forms</li>
-                    <li>Basic SEO readiness</li>
-                    <li>Security best practices</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Professional Website</h3>
-                <div class="price">₹45,000</div>
-                <div class="support">Monthly Support: ₹5,000</div>
-                <ul>
-                    <li>Up to 10 pages</li>
-                    <li>Enhanced UI/UX</li>
-                    <li>Performance optimization</li>
-                    <li>Advanced form integrations</li>
-                    <li>Analytics integration</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>React Business Website</h3>
-                <div class="price">₹95,000</div>
-                <div class="support">Monthly Support: ₹10,000</div>
-                <ul>
-                    <li>Custom React frontend</li>
-                    <li>API & backend integration</li>
-                    <li>SEO-friendly architecture</li>
-                    <li>High performance build</li>
-                    <li>Scalable component structure</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- DIGITAL MARKETING -->
-<section class="section">
-    <div class="container">
-        <h2>Digital Marketing & Campaign Management</h2>
-        <p class="subtext">
-            ROI-focused digital marketing strategies designed for sustained growth.
-        </p>
-
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Starter Digital Presence</h3>
-                <div class="price">₹18,000 / month</div>
-                <ul>
-                    <li>SEO for 10 keywords</li>
-                    <li>Google My Business optimization</li>
-                    <li>8 social media posts</li>
-                    <li>Monthly performance report</li>
-                    <li>Basic competitor analysis</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Growth Booster ⭐</h3>
-                <div class="price">₹35,000 / month</div>
-                <ul>
-                    <li>SEO for 25 keywords</li>
-                    <li>Google & Meta Ads management</li>
-                    <li>16 social media posts</li>
-                    <li>Conversion tracking</li>
-                    <li>Campaign optimization</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Brand Builder</h3>
-                <div class="price">₹65,000 / month</div>
-                <ul>
-                    <li>SEO for 40 keywords</li>
-                    <li>Content marketing (2 blogs)</li>
-                    <li>24 social media posts</li>
-                    <li>Advanced analytics</li>
-                    <li>Brand positioning strategy</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-    <div class="footer-container">
-        <span>© 2026 daila. All rights reserved.</span>
-        <span>Web • E-Commerce • Digital Marketing</span>
-    </div>
+© 2026 daila. All rights reserved. | Web • E-Commerce • Digital Marketing
 </footer>
 
 </body>
 </html>
-
