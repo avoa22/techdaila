@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benefits | daila Name</title>
+    <title>How We Work | Tech Daila</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -21,7 +21,6 @@
             line-height: 1.6;
         }
 
-        /* HEADER */
         header {
             background: #ffffff;
             border-bottom: 1px solid #e5e7eb;
@@ -52,43 +51,24 @@
             color: #2563eb;
         }
 
-        /* PAGE HEADER */
-        .page-header {
-            background: #0f172a;
+        /* HERO */
+        .page-hero {
+            background: linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
+                        url("images/pricing-bg.png") center / cover no-repeat;
             color: #ffffff;
-            padding: 90px 20px;
+            padding: 100px 20px;
         }
 
-        .page-header h1 {
+        .page-hero h1 {
             font-size: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .page-header p {
-            max-width: 760px;
+        .page-hero p {
+            max-width: 750px;
             opacity: 0.9;
         }
 
-.pricing-hero {
-            background:
-                linear-gradient(
-                    rgba(15, 23, 42, 0.85),
-                    rgba(15, 23, 42, 0.85)
-                ),
-                url("images/pricing-bg.png") center / cover no-repeat;
-            color: #ffffff;
-            padding: 110px 20px;
-        }
-
-        .pricing-hero h1 {
-            font-size: 42px;
-            margin-bottom: 12px;
-        }
-
-        .pricing-hero p {
-            max-width: 760px;
-            opacity: 0.9;
-        }
         /* SECTION */
         .section {
             padding: 90px 20px;
@@ -99,38 +79,50 @@
             margin: auto;
         }
 
-        .benefit {
+        .process-step {
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 40px;
-            margin-bottom: 80px;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 90px;
             align-items: center;
         }
 
-        .benefit h2 {
+        .process-number {
+            font-size: 60px;
+            font-weight: 700;
+            color: #e2e8f0;
+        }
+
+        .process-step h2 {
             font-size: 28px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #0f172a;
         }
 
-        .benefit p {
+        .process-step p {
             color: #475569;
+            margin-bottom: 15px;
         }
 
-        iframe {
-            width: 100%;
-            height: 260px;
-            border-radius: 12px;
-            border: none;
+        .highlight {
+            background: #eef2ff;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            border-radius: 6px;
+            font-size: 14px;
         }
 
         @media (max-width: 768px) {
-            .benefit {
+            .process-step {
                 grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .process-number {
+                font-size: 40px;
             }
         }
 
-        /* FOOTER */
         footer {
             background: #020617;
             color: #94a3b8;
@@ -149,7 +141,6 @@
 
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="nav-container">
         <div class="logo">
@@ -158,122 +149,124 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="pricing.html">Pricing</a>
-            <a href="benefits.html" class="active">Benefits</a>
+            <a href="benefits.html" class="active">How We Work</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
 
-<!-- PAGE HEADER -->
-<section class="pricing-hero">
+<section class="page-hero">
     <div class="container">
-        <h1>Why Choose Us</h1>
+        <h1>Our Structured Approach to Building & Scaling Your Business</h1>
         <p>
-            Our approach combines technology, marketing, and long-term support
-            to deliver scalable and measurable business growth.
+            At Tech Daila, we don’t just build websites. We implement structured digital commerce systems 
+            designed for scalability, performance, and measurable growth.
         </p>
     </div>
 </section>
 
-<!-- BENEFITS -->
 <section class="section">
     <div class="container">
 
-        <!-- Shopify -->
-        <div class="benefit">
+        <!-- STEP 1 -->
+        <div class="process-step">
             <div>
-                <h2>Shopify-Centered E-Commerce Expertise</h2>
-                <p>
-                    We specialize in building conversion-focused Shopify stores and mobile apps,
-                    optimized for performance, scalability, and long-term growth.
-                </p>
+                <div class="process-number">01</div>
             </div>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/wkE3kP8aOuc?si=6QNEw0xHJMi3pJ-7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <div>
+                <h2>Business Analysis & Strategy Planning</h2>
+                <p>
+                    We begin by understanding your business model, target audience, pricing structure, 
+                    and growth objectives. This ensures that your digital infrastructure aligns 
+                    with your long-term goals.
+                </p>
+                <div class="highlight">
+                    Outcome: Clear digital roadmap aligned with revenue growth.
+                </div>
+            </div>
         </div>
 
-        <!-- SEO -->
-        <div class="benefit">
+        <!-- STEP 2 -->
+        <div class="process-step">
             <div>
-                <h2>Search Engine Optimized From Day One</h2>
-                <p>
-                    Our websites and campaigns are built with SEO fundamentals baked in,
-                    helping your business rank higher and attract quality organic traffic.
-                </p>
+                <div class="process-number">02</div>
             </div>
-            <iframe src="https://www.youtube.com/embed/DvwS7cV9GmQ"
-                title="Google SEO Basics"></iframe>
+            <div>
+                <h2>Technical Setup & Infrastructure Development</h2>
+                <p>
+                    We build and configure your Shopify store with performance, 
+                    security, and scalability in mind. This includes PWA integration, 
+                    payment gateways, analytics, and essential automation.
+                </p>
+                <div class="highlight">
+                    Outcome: Fully operational commerce system ready for scale.
+                </div>
+            </div>
         </div>
 
-        <!-- Digital Marketing -->
-        <div class="benefit">
+        <!-- STEP 3 -->
+        <div class="process-step">
             <div>
-                <h2>Performance-Driven Digital Marketing</h2>
-                <p>
-                    We run structured Google and Meta ad campaigns with clear goals —
-                    leads, conversions, and measurable ROI.
-                </p>
+                <div class="process-number">03</div>
             </div>
-        <iframe
-  src="https://www.youtube.com/embed/1wJpWjQbC0U"
-  title="Google Ads Basics"
-  allowfullscreen>
-</iframe>
-
-
+            <div>
+                <h2>Conversion Optimization & User Experience</h2>
+                <p>
+                    Every layout, CTA, and checkout flow is structured to maximize 
+                    conversion rates. We eliminate friction points and improve 
+                    customer journey efficiency.
+                </p>
+                <div class="highlight">
+                    Outcome: Higher conversions without increasing ad spend.
+                </div>
+            </div>
         </div>
 
-        <!-- Conversion -->
-        <div class="benefit">
+        <!-- STEP 4 -->
+        <div class="process-step">
             <div>
-                <h2>Conversion-Focused Design & Strategy</h2>
-                <p>
-                    Every layout, CTA, and user flow is designed to convert visitors
-                    into enquiries, leads, and customers.
-                </p>
+                <div class="process-number">04</div>
             </div>
-       <iframe
-  src="https://www.youtube.com/embed/9B9oQ2Qp8nA"
-  title="Conversion Focused Design and User Experience"
-  allowfullscreen>
-</iframe>
-
-
-
-
+            <div>
+                <h2>Traffic Generation & Marketing Integration</h2>
+                <p>
+                    We integrate structured marketing strategies including SEO, 
+                    paid advertising, email automation, and push notifications 
+                    to drive consistent, qualified traffic.
+                </p>
+                <div class="highlight">
+                    Outcome: Predictable traffic and measurable ROI.
+                </div>
+            </div>
         </div>
 
-        <!-- Support -->
-        <div class="benefit">
+        <!-- STEP 5 -->
+        <div class="process-step">
             <div>
-                <h2>Ongoing Support & Optimization</h2>
-                <p>
-                    We provide mandatory monthly support to keep your websites,
-                    apps, and campaigns secure, updated, and optimized.
-                </p>
+                <div class="process-number">05</div>
             </div>
-        <iframe
-  src="https://www.youtube.com/embed/YLKkzeZd0NA"
-  title="Website Fundamentals and Maintenance"
-  allowfullscreen>
-</iframe>
-
-
+            <div>
+                <h2>Ongoing Optimization & Monthly Growth Support</h2>
+                <p>
+                    Digital growth requires consistency. Through our structured 
+                    monthly engagement model, we continuously optimize performance, 
+                    update features, monitor analytics, and refine strategy.
+                </p>
+                <div class="highlight">
+                    Outcome: Long-term scalable digital asset, not just a website.
+                </div>
+            </div>
         </div>
 
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <div class="footer-container">
-        <span>© 2026 daila. All rights reserved.</span>
+        <span>© 2026 Daila. All rights reserved.</span>
         <span>Web • E-Commerce • Digital Marketing</span>
     </div>
 </footer>
 
 </body>
 </html>
-
-
-
